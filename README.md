@@ -1,4 +1,4 @@
-# nmaahc_images
+# NMAAHC Images
 
 To set up the correct conda environment for this project do this:
 
