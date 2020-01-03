@@ -1,0 +1,27 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 25
+#$ -q sThC.q
+#$ -l mres=50G,h_data=2G,h_vmem=2G
+#$ -cwd
+#$ -j y
+#$ -N download_anderson_photos
+#$ -o ../logs/download_anderson_photos.log
+#
+# ----------------Modules------------------------- #
+#
+module load ~/modulefiles/miniconda
+source activate nmaahc_images
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+python ../02_download_images_all.py -j ../data/metadata/edan_anderson_photos.json \
+                                    -d ../data/metadata/anderson_photos_dimensions.tsv \
+                                    -p $NSLOTS
+#
+echo = `date` job $JOB_NAME done
+
