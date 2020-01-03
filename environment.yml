@@ -1,0 +1,8 @@
+name: nmaahc_images
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - requests=2.*
+  - pillow=6.*
+  - pandas=0.24.*
