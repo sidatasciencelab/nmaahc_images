@@ -21,7 +21,7 @@ def requests_PIL_download(id_tuple):
     edan_id, ids_id = id_tuple
     width, height = np.nan, np.nan
     image_url = si_iiif_url(ids_id)
-    filename = '../data/images/{}.jpg'.format(edan_id)
+    filename = '../data/images/{}.jpg'.format(ids_id)
 
     try:
         r = requests.get(image_url, timeout=20)
