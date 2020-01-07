@@ -1,0 +1,28 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -q uTGPU.tq
+#$ -l mres=20G,h_data=20G,h_vmem=20G,gpu,ngpu=1
+#$ -cwd
+#$ -j y
+#$ -N classify_anderson_photos_gpu
+#$ -o ../logs/classify_anderson_photos_gpu.log
+#
+# ----------------Modules------------------------- #
+#
+module load cuda10.0
+module load ~/modulefiles/miniconda
+source activate nmaahc_images
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+nvidia-smi
+#
+python ../04_classify_images_gpu.py -i ../data/images \
+                                    -o ../data/metadata/image_classifications_inception.tsv \
+#
+echo = `date` job $JOB_NAME done
+

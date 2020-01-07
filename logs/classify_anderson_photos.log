@@ -1,0 +1,54 @@
++ Mon Jan 6 16:46:57 EST 2020 job classify_anderson_photos started in sThC.q with jobID=3469600 on compute-81-29
++ NSLOTS = 25
+python: can't open file '../04classify_images_all.py': [Errno 2] No such file or directory
+= Mon Jan 6 16:46:57 EST 2020 job classify_anderson_photos done
++ Mon Jan 6 16:48:12 EST 2020 job classify_anderson_photos started in sThC.q with jobID=3469601 on compute-81-19
++ NSLOTS = 25
+2020-01-06 16:48:19.016769: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-06 16:48:19.043555: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200115000 Hz
+2020-01-06 16:48:19.049347: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558aa2030 executing computations on platform Host. Devices:
+2020-01-06 16:48:19.049494: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-06 16:48:19.050283: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Model load time: 11.145974431186914 s
+Using TensorFlow backend.
++ Mon Jan 6 16:51:26 EST 2020 job classify_anderson_photos started in sThC.q with jobID=3469602 on compute-81-05
++ NSLOTS = 25
+2020-01-06 16:51:31.835336: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-06 16:51:31.858068: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300105000 Hz
+2020-01-06 16:51:31.863241: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558aa2740 executing computations on platform Host. Devices:
+2020-01-06 16:51:31.863304: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-06 16:51:31.864016: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Model load time: 9.49236080236733 s
+Using TensorFlow backend.
++ Mon Jan 6 16:55:23 EST 2020 job classify_anderson_photos started in sThC.q with jobID=3469603 on compute-43-15
++ NSLOTS = 25
+2020-01-06 16:55:27.272438: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-06 16:55:27.285781: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100050000 Hz
+2020-01-06 16:55:27.287264: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55555898c250 executing computations on platform Host. Devices:
+2020-01-06 16:55:27.287300: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-06 16:55:27.330834: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Model load time: 5.972184959799051 s
+Using TensorFlow backend.
++ Mon Jan 6 17:00:42 EST 2020 job classify_anderson_photos started in sThC.q with jobID=3469811 on compute-81-07
++ NSLOTS = 25
+2020-01-06 17:00:48.640728: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-06 17:00:48.685244: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2299995000 Hz
+2020-01-06 17:00:48.691138: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558aa1fc0 executing computations on platform Host. Devices:
+2020-01-06 17:00:48.691319: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-06 17:00:48.696018: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Model load time: 11.398263873532414 s
+Using TensorFlow backend.
++ Tue Jan 7 09:02:33 EST 2020 job classify_anderson_photos started in sThC.q with jobID=3470485 on compute-64-11
++ NSLOTS = 25
+2020-01-07 09:02:37.112332: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-07 09:02:37.132345: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2020-01-07 09:02:37.134810: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555589d19a0 executing computations on platform Host. Devices:
+2020-01-07 09:02:37.134871: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-07 09:02:37.138662: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Model load time: 4.82340487500187 s
+Using TensorFlow backend.

@@ -1,0 +1,207 @@
++ Tue Jan 7 09:44:20 EST 2020 job classify_anderson_photos_gpu started in uTGPU.tq with jobID=3470569 on compute-73-01
++ NSLOTS = 1
+Tue Jan  7 09:44:20 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           On   | 00000000:06:00.0 Off |                    0 |
+| N/A   30C    P8    27W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           On   | 00000000:07:00.0 Off |                    0 |
+| N/A   26C    P8    29W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           On   | 00000000:84:00.0 Off |                    0 |
+| N/A   30C    P8    26W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           On   | 00000000:85:00.0 Off |                    0 |
+| N/A   24C    P8    28W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+2020-01-07 09:44:24.356140: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-07 09:44:24.373952: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300185000 Hz
+2020-01-07 09:44:24.376388: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558a935b0 executing computations on platform Host. Devices:
+2020-01-07 09:44:24.376423: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-07 09:44:24.379501: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+terminate called after throwing an instance of 'Xbyak::Error'
+  what():  can't alloc
+/cm/local/apps/uge/var/spool/compute-73-01/job_scripts/3470569: line 26: 125946 Aborted                 (core dumped) python ../04_classify_images_gpu.py -i ../data/images -o ../data/metadata/image_classifications_inception.tsv
+= Tue Jan 7 09:44:41 EST 2020 job classify_anderson_photos_gpu done
++ Tue Jan 7 09:49:00 EST 2020 job classify_anderson_photos_gpu started in uTGPU.tq with jobID=3470570 on compute-73-01
++ NSLOTS = 1
+Tue Jan  7 09:49:00 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           On   | 00000000:06:00.0 Off |                    0 |
+| N/A   30C    P8    27W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           On   | 00000000:07:00.0 Off |                    0 |
+| N/A   25C    P8    29W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           On   | 00000000:84:00.0 Off |                    0 |
+| N/A   30C    P8    26W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           On   | 00000000:85:00.0 Off |                    0 |
+| N/A   23C    P8    28W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+2020-01-07 09:49:02.804656: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-07 09:49:02.813619: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300185000 Hz
+2020-01-07 09:49:02.815911: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558985cd0 executing computations on platform Host. Devices:
+2020-01-07 09:49:02.815948: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-01-07 09:49:02.819265: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Model load time: 4.358658092096448 s
+Traceback (most recent call last):
+  File "../04_classify_images_gpu.py", line 52, in <module>
+    prediction = classify_image(image)
+  File "../04_classify_images_gpu.py", line 22, in classify_image
+    preds = model.predict(np.expand_dims(im, 0))
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_arrays.py", line 722, in predict
+    callbacks=callbacks)
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_arrays.py", line 399, in model_iteration
+    aggregator.create(batch_outs)
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_utils.py", line 331, in create
+    SliceAggregator(self.num_samples, self.batch_size)))
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_utils.py", line 238, in __init__
+    self._pool = get_copy_pool()
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_utils.py", line 206, in get_copy_pool
+    _COPY_POOL = multiprocessing.pool.ThreadPool(_COPY_THREADS)
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/multiprocessing/pool.py", line 802, in __init__
+    Pool.__init__(self, processes, initializer, initargs)
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/multiprocessing/pool.py", line 176, in __init__
+    self._repopulate_pool()
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/multiprocessing/pool.py", line 241, in _repopulate_pool
+    w.start()
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/multiprocessing/dummy/__init__.py", line 51, in start
+    threading.Thread.start(self)
+  File "/home/triznam/miniconda3/envs/nmaahc_images/lib/python3.7/threading.py", line 852, in start
+    _start_new_thread(self._bootstrap, ())
+RuntimeError: can't start new thread
++ Tue Jan 7 09:53:48 EST 2020 job classify_anderson_photos_gpu started in uTGPU.tq with jobID=3470571 on compute-79-02
++ NSLOTS = 1
+Tue Jan  7 09:53:48 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Quadro GV100        On   | 00000000:3B:00.0 Off |                  Off |
+| 29%   33C    P2    25W / 250W |      0MiB / 32478MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Quadro GV100        On   | 00000000:AF:00.0 Off |                  Off |
+| 29%   30C    P2    24W / 250W |      0MiB / 32478MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+2020-01-07 09:53:51.571192: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-07 09:53:51.589071: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2020-01-07 09:53:51.589249: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558753f10 executing computations on platform Host. Devices:
+2020-01-07 09:53:51.589312: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model load time: 5.531476920470595 s
+{'image_id': 'NMAAHC-HCA_11_43_B', 'label_1': 'Loafer', 'confidence_1': 0.6602649, 'label_2': 'suit', 'confidence_2': 0.15012418, 'label_3': 'television', 'confidence_3': 0.048822664}
+{'image_id': 'NMAAHC-HCA_1_19_C', 'label_1': 'suit', 'confidence_1': 0.5657562, 'label_2': 'Windsor_tie', 'confidence_2': 0.026510328, 'label_3': 'military_uniform', 'confidence_3': 0.020576635}
+{'image_id': 'NMAAHC-HCA_9_10_C', 'label_1': 'bow_tie', 'confidence_1': 0.9914458, 'label_2': 'ice_lolly', 'confidence_2': 0.0011821238, 'label_3': 'harmonica', 'confidence_3': 0.0010130298}
+{'image_id': 'NMAAHC-HCA_8_37_C_1', 'label_1': 'bolo_tie', 'confidence_1': 0.15640782, 'label_2': 'marimba', 'confidence_2': 0.115155905, 'label_3': 'television', 'confidence_3': 0.05815569}
+{'image_id': 'NMAAHC-HCA_20_15_B_2', 'label_1': 'notebook', 'confidence_1': 0.19870164, 'label_2': 'laptop', 'confidence_2': 0.15047225, 'label_3': 'crossword_puzzle', 'confidence_3': 0.084266685}
+{'image_id': 'NMAAHC-HCA_7_42_D', 'label_1': 'cinema', 'confidence_1': 0.19866128, 'label_2': 'kimono', 'confidence_2': 0.16863835, 'label_3': 'marimba', 'confidence_3': 0.06487417}
+{'image_id': 'NMAAHC-HCA_19_29_C', 'label_1': 'bucket', 'confidence_1': 0.48772314, 'label_2': 'shower_cap', 'confidence_2': 0.03583008, 'label_3': 'knee_pad', 'confidence_3': 0.026051965}
+{'image_id': 'NMAAHC-HCA_1_28_C', 'label_1': 'groom', 'confidence_1': 0.36447838, 'label_2': 'bow_tie', 'confidence_2': 0.13128144, 'label_3': 'television', 'confidence_3': 0.11362544}
+{'image_id': 'NMAAHC-2012_137_15_26_001', 'label_1': 'dumbbell', 'confidence_1': 0.17392345, 'label_2': 'diaper', 'confidence_2': 0.12345245, 'label_3': 'parallel_bars', 'confidence_3': 0.098920316}
+{'image_id': 'NMAAHC-HCA_10_38_D', 'label_1': 'suit', 'confidence_1': 0.5834044, 'label_2': 'television', 'confidence_2': 0.17836702, 'label_3': 'Windsor_tie', 'confidence_3': 0.044388626}
+Prediction time: 7.032990233041346 s
+= Tue Jan 7 09:54:05 EST 2020 job classify_anderson_photos_gpu done
++ Tue Jan 7 09:57:45 EST 2020 job classify_anderson_photos_gpu started in uTGPU.tq with jobID=3470572 on compute-79-01
++ NSLOTS = 1
+Tue Jan  7 09:57:45 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Quadro GV100        On   | 00000000:3B:00.0 Off |                  Off |
+| 29%   32C    P2    25W / 250W |      0MiB / 32478MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Quadro GV100        On   | 00000000:AF:00.0 Off |                  Off |
+| 29%   30C    P2    24W / 250W |      0MiB / 32478MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+2020-01-07 09:57:47.778906: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-07 09:57:47.787555: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2020-01-07 09:57:47.787721: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558754040 executing computations on platform Host. Devices:
+2020-01-07 09:57:47.787787: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model load time: 4.416701488662511 s
+Prediction time: 716.2098372378387 s
+= Tue Jan 7 10:09:49 EST 2020 job classify_anderson_photos_gpu done
++ Tue Jan 7 12:06:39 EST 2020 job classify_anderson_photos_gpu started in uTGPU.tq with jobID=3470956 on compute-73-01
++ NSLOTS = 1
+Tue Jan  7 12:06:39 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           On   | 00000000:06:00.0 Off |                    0 |
+| N/A   29C    P8    27W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           On   | 00000000:07:00.0 Off |                    0 |
+| N/A   25C    P8    29W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           On   | 00000000:84:00.0 Off |                    0 |
+| N/A   29C    P8    26W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           On   | 00000000:85:00.0 Off |                    0 |
+| N/A   22C    P8    28W / 149W |      0MiB / 11441MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+2020-01-07 12:06:41.786881: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-01-07 12:06:41.793180: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300185000 Hz
+2020-01-07 12:06:41.793299: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555558754650 executing computations on platform Host. Devices:
+2020-01-07 12:06:41.793330: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model load time: 4.362622273154557 s
+Prediction time: 807.9258887153119 s
+= Tue Jan 7 12:20:15 EST 2020 job classify_anderson_photos_gpu done
