@@ -22,7 +22,7 @@ echo + NSLOTS = $NSLOTS
 nvidia-smi
 #
 python ../04_classify_images_gpu.py -i ../data/images \
-                                    -o ../data/metadata/image_classifications_inception.tsv \
+                                    -o ../results/image_classifications_inception.tsv \
 #
 echo = `date` job $JOB_NAME done
 
